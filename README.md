@@ -1,5 +1,4 @@
-# notification-system-backend
-Notification System Backend
+# Notification-system-backend
 
 This is a real-time notification system backend built with Node.js, TypeScript, MongoDB, Express, and WebSockets. It allows admins to send notifications to individual users or broadcast messages to all users. Users can receive notifications in real-time and manage their read/unread status.
 
