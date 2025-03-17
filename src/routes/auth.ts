@@ -5,9 +5,12 @@ import { z } from "zod";
 import jwt from "jsonwebtoken";
 import user from "../models/user";
 import { Request, Response } from "express";
+import dotenv from "dotenv";
 
 const router = express.Router();
 const SECRET_KEY = process.env.JWT_SECRET || "user123";
+
+dotenv.config();
 
 const signUpSchema = z.object({
     email: z.string().email(),              // Must be a valid email
